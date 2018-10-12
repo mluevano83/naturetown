@@ -1,0 +1,87 @@
+  /*main styles*/
+body {
+    background-image: url("https://images.pexels.com/photos/414586/pexels-photo-414586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-color: #F9F3D1; /* secondary color if img url fails*/
+    border-color: #6F6952;
+    color: #6F6952;
+    font-family: Andale Mono, monospace;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 8px;
+    text-align: right;
+    color: black;
+}
+
+.nav{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/*article elements*/
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.wrapper > * {
+  flex: 1 100%;
+}
+
+@media all and (min-width: 600px) {
+    .aside { flex: 1 auto; }
+}
+  
+@media all and (min-width: 800px) {
+    .main { flex: 3 0px; }
+    .aside { order: 1; } 
+    .main { order: 2; }
+}
+
+article {
+    background-color: #ccc;
+    margin-right: 5em;
+    margin-bottom: 2em;
+    border-width: 3px;
+    border-style: solid;
+    text-align: left;
+    border-radius: 25px;
+    padding: 1em;
+}
+
+/** contact page items */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 33%;
+    margin-left: 33%;
+}
+
+form input {
+    margin-bottom: 2em;
+}
+
+.button {
+    background-color: #DAF7A6;
+    color: black;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-right: 33%;
+    margin-left: 33%;
+    border-radius: 25px;
+}

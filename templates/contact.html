@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content%}
+    <h1 class="title">Contact Us</h1>
+    <form name="contact" method="post" onsubmit="return validateForm()">
+        Name:<input type="text" name="name">
+        Email Address:<input type="text" name="email">
+        Comment:<textarea rows="4" cols="10" name="comment"></textarea>
+        <input type="submit" value="Submit!" class="button">
+    </form>
+{% endblock %}
